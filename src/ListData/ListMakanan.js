@@ -1,0 +1,21 @@
+import React, { Component } from "react";
+
+class ListMakanan extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataList: this.props.link
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <img src={this.props.link} alt="Product Makanan" width="150" />
+            </div>
+        )
+    }
+
+}
+
+export default ListMakanan;
